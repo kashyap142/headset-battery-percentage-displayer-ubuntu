@@ -1,0 +1,7 @@
+{
+  "uuid": "headset-battery@kunal.local",
+  "name": "Headset Battery",
+  "description": "Shows Bluetooth headset battery percentage in the top bar (reads UPower).",
+  "shell-version": ["50"],
+  "version": 1
+}
