@@ -21,7 +21,10 @@ No polling.
 
     gjs -m test/logic.test.js          # tests only
     journalctl --user -b -g headset-battery   # errors, if any
-    ./stop.sh             # hide now, stays off across logins
+    ./stop.sh             # hide now, stays off across logins; asks whether to remove files
+    ./stop.sh --keep      # hide, keep files (no prompt)
+    ./stop.sh --remove    # hide + uninstall (bring back: ./install.sh + re-login)
+    bash test/stop.test.sh   # dry-run tests for stop.sh
     ./start.sh            # show again
 
 ## Limits
