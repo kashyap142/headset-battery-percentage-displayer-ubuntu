@@ -21,7 +21,8 @@ No polling.
 
     gjs -m test/logic.test.js          # tests only
     journalctl --user -b -g headset-battery   # errors, if any
-    gnome-extensions disable headset-battery@kunal.local
+    ./stop.sh             # hide now, stays off across logins
+    ./start.sh            # show again
 
 ## Limits
 
